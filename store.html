@@ -47,50 +47,38 @@
       </div>
     </header>
     <main>
-      <section class="promoblocks">
-        <ul class="promo-links"> <!-- или весь блок на div? -->
-          <li class="building">
-            <p>Материалы</p>
-            <a href="building.html">на любой вкус</a>
-          </li>
-          <li class="tools">
-            <p>Инструменты</p>
-            <a href="tools.html">на все случаи</a>
-          </li>
-          <li class="appliances">
-            <p>Техника</p>
-            <a href="appliances.html">для стройки</a>
-          </li>
-          <li class="sale">
-            <p>Скидки 50%</p>
-            <a href="offers.html">на 350 товаров</a>
-          </li>
-          <li class="delivery">
-            <p>Доставка</p>
-            <a href="delivery.html">бесплатно</a>
-          </li>
-        </ul>
-        <div class="slider-block">
-          <h3>Дрели</h3>
-          <p>Соседям на радость!</p>
-          <a href="catalogue.html">открыть каталог</a>
-        </div>
+      <ol class="breadcrumbs">
+        <li> <a href="store.mtml">Каталог</a> </li>
+        <li> <a href="tools.mtml">Инструменты</a> </li>
+        <li> Перфораторы </li>
+      </ol>
+      <h2>перфораторы</h2>
+      <section class="filters">
+        <h3>фильтр</h3>
+        <h4>цена</h4>
+        <!-- slider -->
+        <h4>производители</h4>
+        <!-- формы! в страшном количестве! -->
+        <input type="checkbox" name="" value="">
+        <input type="checkbox" name="" value="">
+        <input type="checkbox" name="" value="">
+        <input type="checkbox" name="" value="">
+        <input type="checkbox" name="" value="">
+        <h4>питание</h4>
+        <input type="radio" name="" value="">
+        <input type="radio" name="" value="">
+        <button type="" name="button">показать</button>
       </section>
-      <section class="topitems">
-        <h2>Популярные товары:</h2>
-        <a class="buttonlink" href="topitems.html">Все популярные товары</a>
-        <ul class="items-list">
-          <li><a href="boschbgf9000.html">
-            <h3> <span class="item-name"> Перфоратор BOSCH </span> <span class="item-article"> BFG 9000 </span> </h3>
-            <span class="oldprice">32500</span>
-            <b class="newprice">25500</b>
-            <p> <img src="BFG 9000.jpeg" alt="Перфоратор BOSCH BFG 9000">
-            </p>
-            <p class="photo-hover">
-              <a class="tocart" href="tocart">Купить</a>
-              <a class="addtofav" href="tofavorites"></a>
-            </p>
-          </a> </li> <!-- добавить ярлык new -->
+      <section class="catalogue">
+        <div class="sorter">
+          <h3>сортировка</h3>
+          <ul class="sorter-param"> <!-- здесь тоже должен работать скрипт -->
+            <li>по цене</li>
+            <li>по типу</li>
+            <li>по функционалу</li>
+          </ul>
+        </div>
+        <ul>
           <li><a href="boschbgf3000.html">
             <h3> <span class="item-name"> Перфоратор BOSCH </span> <span class="item-article"> BFG 3000 </span> </h3>
             <span class="oldprice">22500</span>
@@ -101,7 +89,75 @@
               <a class="tocart" href="tocart">Купить</a>
               <a class="addtofav" href="tofavorites"></a>
             </p>
+          </a> </li>
+          <li><a href="boschbgf6000.html">
+            <h3> <span class="item-name"> Перфоратор BOSCH </span> <span class="item-article"> BFG 6000 </span> </h3>
+            <span class="oldprice">30500</span>
+            <b class="newprice">25500</b>
+            <p> <img src="BFG 6000.jpeg" alt="Перфоратор BOSCH BFG 3000">
+            </p>
+            <p class="photo-hover">
+              <a class="tocart" href="tocart">Купить</a>
+              <a class="addtofav" href="tofavorites"></a>
+            </p>
           </a> </li> <!-- добавить ярлык new -->
+          <li><a href="boschbgf2000.html">
+            <h3> <span class="item-name"> Перфоратор BOSCH </span> <span class="item-article"> BFG 2000 </span> </h3>
+            <span class="oldprice"></span> <!-- hidden -->
+            <b class="newprice">12500</b>
+            <p> <img src="BFG 2000.jpeg" alt="Перфоратор BOSCH BFG 2000">
+            </p>
+            <p class="photo-hover">
+              <a class="tocart" href="tocart">Купить</a>
+              <a class="addtofav" href="tofavorites"></a>
+            </p>
+            <span class="label">new</span>
+          </a> </li>
+          <li><a href="boschbgf3000.html">
+            <h3> <span class="item-name"> Перфоратор BOSCH </span> <span class="item-article"> BFG 3000 </span> </h3>
+            <span class="oldprice">22500</span>
+            <b class="newprice">15500</b>
+            <p> <img src="BFG 3000.jpeg" alt="Перфоратор BOSCH BFG 3000">
+            </p>
+            <p class="photo-hover">
+              <a class="tocart" href="tocart">Купить</a>
+              <a class="addtofav" href="tofavorites"></a>
+            </p>
+          </a> </li>
+          <li><a href="boschbgf6000.html">
+            <h3> <span class="item-name"> Перфоратор BOSCH </span> <span class="item-article"> BFG 6000 </span> </h3>
+            <span class="oldprice">30500</span>
+            <b class="newprice">25500</b>
+            <p> <img src="BFG 6000.jpeg" alt="Перфоратор BOSCH BFG 3000">
+            </p>
+            <p class="photo-hover">
+              <a class="tocart" href="tocart">Купить</a>
+              <a class="addtofav" href="tofavorites"></a>
+            </p>
+          </a> </li> <!-- добавить ярлык new -->
+          <li><a href="boschbgf2000.html">
+            <h3> <span class="item-name"> Перфоратор BOSCH </span> <span class="item-article"> BFG 2000 </span> </h3>
+            <span class="oldprice"></span> <!-- hidden -->
+            <b class="newprice">12500</b>
+            <p> <img src="BFG 2000.jpeg" alt="Перфоратор BOSCH BFG 2000">
+            </p>
+            <p class="photo-hover">
+              <a class="tocart" href="tocart">Купить</a>
+              <a class="addtofav" href="tofavorites"></a>
+            </p>
+            <span class="label">new</span>
+          </a> </li>
+          <li><a href="boschbgf3000.html">
+            <h3> <span class="item-name"> Перфоратор BOSCH </span> <span class="item-article"> BFG 3000 </span> </h3>
+            <span class="oldprice">22500</span>
+            <b class="newprice">15500</b>
+            <p> <img src="BFG 3000.jpeg" alt="Перфоратор BOSCH BFG 3000">
+            </p>
+            <p class="photo-hover">
+              <a class="tocart" href="tocart">Купить</a>
+              <a class="addtofav" href="tofavorites"></a>
+            </p>
+          </a> </li>
           <li><a href="boschbgf6000.html">
             <h3> <span class="item-name"> Перфоратор BOSCH </span> <span class="item-article"> BFG 6000 </span> </h3>
             <span class="oldprice">30500</span>
@@ -126,74 +182,36 @@
             <span class="label">new</span>
           </a> </li>
         </ul>
-      </section>
-
-      <section class="topbrands">
-        <h2>Популярные производители:</h2>
-        <a class="buttonlink" href="brands.html">Все производители</a>
-        <ul>
-          <li> <a href="bosch.htm"> <img src="bosch.jpeg" alt="BOSCH"> </a> </li>
-          <li> <a href="makita.htm"> <img src="makita.jpeg" alt="Makita"> </a> </li>
-          <li> <a href="dewalt.htm"> <img src="dewalt.jpeg" alt="DeWALT"> </a> </li>
-          <li> <a href="interskol.htm"> <img src="interskol.jpeg" alt="Интерскол"> </a> </li>
-          <li> <a href="hitachi.htm"> <img src="hitachi.jpeg" alt="HITACHI"> </a> </li>
-          <li> <a href="lg.htm"> <img src="lg.jpeg" alt="LG"> </a> </li>
-          <li> <a href="aeg.htm"> <img src="aeg.jpeg" alt="AEG"> </a> </li>
-          <li> <a href="metabo.htm"> <img src="metabo.jpeg" alt="metabo"> </a> </li>
+        <ul class="pagination">
+          <li class="current">1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>следующая</li>
         </ul>
       </section>
-
-      <section class="service">
-        <h2>Сервисы</h2>
-        <p> Хороший магазин отличается от плохого не только ценами! <br>
-            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        </p>
-        <ul class="blacktheme service-links">
-          <li> <a href="delivery.htm"> Доставка </a> <!-- button or link? -->
-            <!-- какой-то контейнер с классом delivery?-->
-              <h3>Доставка</h3>
-              <p> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br>
-                Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-              </p>
-          </li>
-          <li> <a href="guarantee.html"> Гарантия </a> </li>
-          <li> <a href="credit.html"> Кредит </a> </li>
-        </ul>
-      </section>
-
-      <section class="company">
-        <h2>Компания "Техномарт"</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! <br>
-           Техномарт работает со многими транспортными компаниями:</p>
-           <ul class="transcompanies">
-             <li>Деловые линии</li>
-             <li>Автотрейдинг</li>
-             <li>ЖелДорЭкспедиция</li>
-           </ul>
-           <a href="company.html">Подробнее о компании</a>
-      </section>
-
-      <section class="map-contact">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <!-- тут жжот JS -->
+      <section class="info">
+        <article class="perforators">
+          <h2>пара слов о перфораторах</h2>
+          <p>Перфоратор - уникальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+        </article>
       </section>
     </main>
-    <footer class="blacktheme">
+    <footer>
       <div class="footer-nav">
-        <a class="logo" href="technomart.ru">Техномарт</a>
+        <span>Техномарт</span>
         <p>г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 <br>
          +7(812)555-05-55
         </p>
-        <ul class="navigation">
+        <ul class="nav"
           <li> <a href="Company.html"> Компания </a> </li>
           <li> <a href="news.html"> Новости </a> </li>
           <li> <a href="catalogue.html"> Каталог </a> </li>
           <li> <a href="delivery.html"> Доставка </a> </li>
           <li> <a href="contacts.html"> Контакты </a> </li>
         </ul>
-        <ul class="promolinks">
+        <ul class="promo">
           <li> <a href="building.html"> Материалы </a> </li>
           <li> <a href="appliances.html"> Техника </a> </li>
           <li> <a href="tools.html"> Инструменты </a> </li>
@@ -203,24 +221,18 @@
       <div class="footer-link">
         <p>(c) 2010-2019 Компания "Техномарт" <br>
            Все права защищены</p>
-        <ul class="social-links">
+        <ul>
           <li> <a href="vk.ru">vk</a> </li>
           <li> <a href="fb.com">fb</a> </li>
           <li> <a href="inst.ru">inst</a> </li>
         </ul>
-        <p>Обратная связь: 
+        <p>Обратная связь:
           <a href="mailto:mail@htmlacademy.ru?subject=feedback">mail@htmlacademy.ru</a>  </p>
-        <p>Разработано -
+        <p>Разработано - 
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>  </p>
       </div>
+
     </footer>
-    <section class="modal-box feedback">
-      <p>Ваше имя:</p>
-      <p>Ваш e-mail:</p>
-      <p>Текст письма:</p>
-      <!-- форма ввода -->
-      <span class="modal-close">x</span>
-    </section>
+
   </body>
 </html>
-<!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->

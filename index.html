@@ -3,21 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/technomart.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <div class="header-top">
-        <a class="header-logo" href="technomart.ru">Техномарт</a>
+        <a class="logo" href="technomart.ru"><img src="img/technomart-header.png" width="110" height="18" alt="логотип Техномарт"></a>
         <form class="site-search" action="https//echo.htmlacademy.ru" method="get">
           <label for="search">Поиск по сайту</label>
-          <input type="textarea" id="search" placeholder="Поиск">
+          <input type="search" id="search" placeholder="Поиск:">
         </form>
         <ul class="user-options">
           <li class="user-bookmarks">
-            <a href="user-bookmarks.html">Закладки:0</a>
+            <a href="user-bookmarks.html">Закладки: 0</a>
           </li>
           <li class="user-busket">
-            <a href="user-busket.html">Корзина:0</a>
+            <a href="user-busket.html">Корзина: 0</a>
           </li>
           <li class="user-order">
             <a href="user-order.html">Оформить заказ</a>
@@ -91,8 +95,8 @@
             <a href="delivery.html">бесплатно</a>
           </li>
           <li>
-            <div class="promo-block promo-block-slider-block">
-              <ul>
+            <div class="promo-block-slider-block">
+              <ul class="promo-block-slider-headings">
                 <li class="slider-block-drills">
                   <h3>Дрели</h3>
                   <p>Соседям на радость!</p>
@@ -100,6 +104,14 @@
                 <li class="slider-block-perforators">
                   <h3>Перфораторы</h3>
                   <p>Настоящие мужские игрушки</p>
+                </li>
+              </ul>
+              <ul class="slider-switchers">
+                <li class="slide-radio">
+                  <button class="slide-btn">Переключатель-1</button>
+                </li>
+                <li class="slide-radio">
+                  <button class="slide-btn active">Переключатель-2</button>
                 </li>
               </ul>
               <a class="button promo-block-button" href="store.html">открыть каталог</a>
@@ -110,7 +122,7 @@
       <section class="top-items">
         <header class="top-items-header">
           <h2>Популярные товары:</h2>
-          <a class="class="button top-items-button"" href="topitems.html">Все популярные товары</a>
+          <a class="button top-items-button" href="topitems.html">Все популярные товары</a>
         </header>
         <ul class="items-list">
           <li class="item-box">
@@ -205,10 +217,10 @@
               <li class="service-tab service-tab-active">
                 <a href="delivery.html">Доставка</a>
               </li>
-              <li class="service-tab service-tab-active">
+              <li class="service-tab">
                 <a href="guarantee.html">Гарантия</a>
               </li>
-              <li class="service-tab service-tab-active">
+              <li class="service-tab">
                 <a href="credit.html">Кредит</a>
               </li>
             </ul>
@@ -230,13 +242,12 @@
                 <p>Залезть в долговую яму стало проще!<br>
                   Кредитные консультанты придут вам на помощь.
                 </p>
-                <a class="buttonlink" href="creditform.html"></a>
+                <a class="button button-link" href="creditform.html">отправить заявку</a>
               </div>
             </div>
           </section>
-
       </section>
-      <section class="transport">
+      <section class="logistic">
         <section class="company">
           <h2>Компания "Техномарт"</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.
@@ -262,7 +273,7 @@
     </main>
     <footer class="main-footer">
       <div class="footer-nav">
-        <a class="logo" href="technomart.ru">Техномарт</a>
+        <a class="logo" href="technomart.ru"><img src="img/logo-footer.png" width="138" height="23" alt="логотип Техномарт"></a>
         <p>г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
          +7(812)555-05-55
         </p>

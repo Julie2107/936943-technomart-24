@@ -3,21 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт - каталог товаров</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/technomart.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <div class="header-top">
-        <a class="header-logo" href="technomart.ru">Техномарт</a>
+        <a class="logo" href="technomart.ru"><img src="img/technomart-header.png" width="110" height="18" alt="логотип Техномарт"></a>
         <form class="site-search" action="https//echo.htmlacademy.ru" method="get">
           <label for="search">Поиск по сайту</label>
-          <input type="textarea" id="search" placeholder="Поиск">
+          <input type="search" id="search" placeholder="Поиск:">
         </form>
         <ul class="user-options">
           <li class="user-bookmarks">
-            <a href="user-bookmarks.html">Закладки:0</a>
+            <a href="user-bookmarks.html">Закладки: 0</a>
           </li>
           <li class="user-busket active">
-            <a href="user-busket.html">Корзина:10</a>
+            <a href="user-busket.html">Корзина: 10</a>
           </li>
           <li class="user-order">
             <a href="user-order.html">Оформить заказ</a>
@@ -36,7 +40,7 @@
               <a href="userprofile.html">Равшан Джамшутович</a>
               <a href="logout.html">Выйти из профиля</a>
             </div>
-            <ul class="user-options">
+            <ul class="user-options-list">
               <li>
                 <a href="myorders.html">Мои заказы</a>
               </li>
@@ -76,27 +80,31 @@
     <main>
       <ul class="breadcrumbs">
         <li>
+          <a href="index.html">на главную</a>
+        </li>
+        <li>
           <a href="store.mtml">Каталог</a>
         </li>
         <li>
           <a href="tools.mtml">Инструменты</a>
         </li>
-        <li>Перфораторы
+        <li>
+          Перфораторы
         </li>
       </ul>
-      <h2>перфораторы</h2>
+      <h2 class="catalogue-heading">перфораторы</h2>
       <section class="filters">
         <h3>фильтр:</h3>
-        <section class="filter-price">
-          <h4>цена</h4>
-          <span class="price-scale"></span>
-          <span class="price-range">0 - 30000</span>
-        </section>
         <form class="filter-form" action="https//:echo.htmlacademy.ru" method="get" oninput="maxoutput.value=max.value">
-            <p>
-              <output name="min">0</output>-
-              <output name="maxoutput" id="pricerangemax">30000</output>
-            </p>
+          <fieldset class="filter-price">
+            <legend>цена:</legend>
+            <div class="minprice-button">
+            </div>
+            <div class="maxprice-button">
+            </div>
+            <input type="text" name="minprice" value="0">
+            -
+            <input type="text" name="maxprice" value="30000">
           </fieldset>
           <fieldset class="brands-filter">
             <legend>производители:</legend>
@@ -123,7 +131,7 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="power-type">
             <legend>питание:</legend>
             <ul>
               <li class="filter-radio">
@@ -159,7 +167,7 @@
             </li>
           </ul>
         </div>
-        <ul>
+        <ul class="items-list">
           <li class="item-box">
             <h3 class="item-title">Перфоратор BOSCH BFG 3000</h3>
             <span class="item-old-price">22500 Р.</span>
@@ -169,7 +177,7 @@
             </div>
             <div class="item-photo-hover">
               <a class="tocart" href="tocart.html">Купить</a>
-              <a class="bookmarks" href="bookmarks.html"></a>
+              <a class="bookmarks" href="bookmarks.html">В закладки</a>
             </div>
           </li>
           <li class="item-box">
@@ -181,7 +189,7 @@
             </div>
             <div class="item-photo-hover">
               <a class="tocart" href="tocart.html">Купить</a>
-              <a class="bookmarks" href="bookmarks.html"></a>
+              <a class="bookmarks" href="bookmarks.html">В закладки</a>
             </div>
           </li>
           <li class="item-box label-new">
@@ -193,13 +201,13 @@
             </div>
             <div class="item-photo-hover">
               <a class="tocart" href="tocart.html">Купить</a>
-              <a class="bookmarks" href="bookmarks.html"></a>
+              <a class="bookmarks" href="bookmarks.html">В закладки</a>
             </div>
           </li>
         </ul>
         <ul class="pagination">
           <li class="page-number current">
-            1
+            <span>1</span>
           </li>
           <li class="page-number">
             <a href="2.html">2</a>
@@ -221,7 +229,7 @@
     </main>
     <footer class="main-footer">
       <div class="footer-nav">
-        <a class="logo" href="technomart.ru">Техномарт</a>
+        <a class="logo" href="technomart.ru"><img src="img/logo-footer.png" width="138" height="23" alt="логотип Техномарт"></a>
         <p>г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
          +7(812)555-05-55
         </p>

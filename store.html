@@ -107,11 +107,20 @@
             <form class="filter-form" action="https//:echo.htmlacademy.ru" method="get" oninput="maxoutput.value=max.value">
               <fieldset class="filter-price">
                 <legend>цена:</legend>
-                <div class="minprice-button"></div>
-                <div class="maxprice-button"></div>
-                <input type="text" name="minprice" value="0">
-                -
-                <input type="text" name="maxprice" value="30000">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="minprice"><span class="visually-hidden">
+                    от</span> <input type="text" name="min-price" value="0"></label>
+                     <span class="price-input-divider">-</span>
+                  <label class="max-price"><span class="visually-hidden">до</span> <input type="text" name="maxprice" value="30000"></label>
+                </div>
+
               </fieldset>
               <fieldset class="brands-filter">
                 <legend>производители:</legend>
@@ -203,7 +212,8 @@
                   <a class="bookmarks" href="bookmarks.html">В закладки</a>
                 </div>
               </li>
-              <li class="item-box label-new">
+              <li class="item-box">
+                <div class="flag flag-new">новинка</div>
                 <div class="item-photo">
                   <img src="img/bfg2000_i.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                 </div>
@@ -229,6 +239,7 @@
                 </div>
               </li>
               <li class="item-box">
+                <div class="flag flag-new">новинка</div>
                 <div class="item-photo">
                   <img src="img/bfg6000_i.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </div>
@@ -254,6 +265,7 @@
                 </div>
               </li>
               <li class="item-box">
+                <div class="flag flag-new">новинка</div>
                 <div class="item-photo">
                   <img src="img/bfg3000_i.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </div>
@@ -397,10 +409,14 @@
       </div>
     </footer>
     <section class="modal-box item-added">
-      <p>Товар добавлен в корзину!</p>
-      <a class="button order-button" href="user-order.html">Оформить заказ</a>
-      <button class="button-close" type="button">Продолжить покупки</button>
-      <button class="modal-close" type="button">закрыть</button>
+      <div class="modal-container modal-container-heading">
+        <p>Товар добавлен в корзину!</p>
+      </div>
+      <div class="modal-container button-container">
+        <a class="button order-button" href="user-order.html">Оформить заказ</a>
+        <button class="button button-close" type="button">Продолжить покупки</button>
+      </div>
+        <button class="modal-close" type="button">закрыть</button>
     </section>
   </body>
 </html>

@@ -80,7 +80,8 @@
     <main>
       <section class="promo-blocks container">
         <ul class="promo-blocks-list">
-          <li class="promo-block promo-block-building label label-new">
+          <li class="promo-block promo-block-building">
+            <div class="flag flag-new">новинка</div>
             <p>Материалы</p>
             <a href="building.html">на любой вкус</a>
           </li>
@@ -94,9 +95,11 @@
           </li>
           <li>
             <div class="promo-block-slider-block">
+              <input class="visually-hidden" type="radio" id="slider-drills" name="toggle" checked>
+              <input class="visually-hidden" type="radio" id="slider-perforators" name="toggle">
               <div class="slider-controls">
-                <i class="active"></i>
-                <i></i>
+                <label class="slider-controls-item slider-controls-drills" for="slider-drills">Дрели</label>
+                <label class="slider-controls-item slider-controls-perforators" for="slider-perforators">Перфораторы</label>
               </div>
               <ul class="promo-block-slider-headings">
                 <li class="slider-block-drills">
@@ -112,10 +115,10 @@
               </ul>
               <ul class="slider-switchers">
                 <li class="slide-radio">
-                  <button class="slide-btn">Переключатель-1</button>
+                  <button class="slide-btn">Назад</button>
                 </li>
                 <li class="slide-radio">
-                  <button class="slide-btn active">Переключатель-2</button>
+                  <button class="slide-btn active">Вперед</button>
                 </li>
               </ul>
             </div>
@@ -176,7 +179,8 @@
               <a class="bookmarks" href="bookmarks.html">В закладки</a>
             </div>
           </li>
-          <li class="item-box label-new">
+          <li class="item-box">
+            <div class="flag flag-new">новинка</div>
             <div class="item-photo">
               <img src="img/bfg2000_i.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </div>
@@ -244,7 +248,7 @@
               </li>
             </ul>
             <div class="service-content">
-              <div class="delivery-tab">
+              <div class="delivery-tab tab-active">
                 <h3>Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
                   Ведь мы неплохо заработаем, поднимая его на ваш этаж!
@@ -370,20 +374,25 @@
       </div>
     </footer>
     <section class="modal-box feedback">
-      <form class="feedback-form" action="https//echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="your-name">Ваше имя:</label>
-          <input type="text" name="name" id="your-name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="your-email">Ваш e-mail:</label>
-          <input type="email" name="email" id="your-email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="your-text">Текст письма:</label>
-          <input type="text" name="text" id="your-text" placeholder="В свободной форме">
-        </p>
-        <button type="submit" name="feedback">Отправить</button>
+      <div class="modal-container">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="feedback-form" action="https//echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="your-name">Ваше имя:</label>
+            <input type="text" name="name" id="your-name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="your-email">Ваш e-mail:</label>
+            <input type="email" name="email" id="your-email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="feedback-text">Текст письма:</label>
+            <textarea name="feedback-text" rows="8" cols="70"></textarea>
+          </p>
+        </div>
+        <div class="modal-container button-container">
+          <button class="button button-submit" type="submit" name="feedback">Отправить</button>
+        </div>
       </form>
       <button class="modal-close" type="button">закрыть</button>
     </section>

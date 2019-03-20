@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 960px;
 
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
@@ -361,6 +362,7 @@ body {
   color: #ee3643;
   font-size: 16px;
   font-style: italic;
+  font-weight: 400;
   line-height: 23px;
 }
 
@@ -1769,10 +1771,9 @@ body {
   position: relative;
   margin-bottom: 9px;
   padding: 40px 20px;
+
   border: none;
   border-radius: 3px;
-
-
   background-color: #f7f3ec;
 }
 
@@ -1819,7 +1820,7 @@ body {
 .power-type li {
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 18px;
   text-align: left;
   text-transform: uppercase;
@@ -1855,6 +1856,7 @@ body {
   background-color: #ffffff;
   background: url("../img/checkbox-on.svg") no-repeat 0 0;
 }
+
 
 .checkbox input:checked + label::before {
   display: none;
@@ -2113,7 +2115,7 @@ body {
   margin: 0;
 
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 /*модальные окна*/
@@ -2254,7 +2256,7 @@ body {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
-
+  outline: none;
   border: 2px solid #ee3643;
 }
 
@@ -2303,6 +2305,8 @@ body {
   width: 940px;
   left: 50%;
   margin-left: -470px;
+
+  background-color: #f4f2ec;
 }
 
 .map img {

@@ -236,19 +236,16 @@
            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
          </p>
          <section class="services">
-           <ul class="service-tabs">
-             <li class="service-tab service-tab-active">
-               <a href="index.html/delivery">Доставка</a>
-             </li>
-             <li class="service-tab">
-               <a href="index.html/guarantee">Гарантия</a>
-             </li>
-             <li class="service-tab">
-               <a href="index.html/credit">Кредит</a>
-             </li>
-           </ul>
+           <input type="radio" name="tab" id="radio-delivery" class="visually-hidden" checked>
+           <input type="radio" name="tab" id="radio-guarantee"  class="visually-hidden">
+           <input type="radio" name="tab" id="radio-credit"  class="visually-hidden">
+           <div class="service-tabs">
+             <label for="radio-delivery" class="service-tab">Доставка</label>
+             <label for="radio-guarantee" class="service-tab">Гарантия</label>
+             <label for="radio-credit" class="service-tab">Кредит</label>
+           </div>
            <div class="service-content">
-             <div class="delivery-tab tab-active">
+             <div class="delivery-tab">
                <h3>Доставка</h3>
                <p>Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно!<br>
                  Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!

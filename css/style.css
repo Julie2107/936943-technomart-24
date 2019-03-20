@@ -377,7 +377,7 @@ body {
   position: relative;
   box-sizing: border-box;
   width: 270px;
-  padding: 9px 49px 9px 71px;
+  padding: 9px 48px 9px 71px;
   margin: 0;
   margin-bottom: 4px;
 
@@ -1263,7 +1263,7 @@ body {
 
 .footer-nav {
   background-color: #32425c;
-  height: 193px;
+  padding-bottom: 50px;
 }
 
 .footer-nav .container {
@@ -1392,7 +1392,10 @@ body {
 
 .footer-link .copyright {
   display: block;
+  box-sizing: border-box;
   width: 330px;
+  padding-right: 100px;
+
 }
 
 .social-links {
@@ -1862,6 +1865,10 @@ body {
   display: none;
 }
 
+.checkbox input:focus + label {
+  outline: #5fbb2d solid 2px;
+}
+
 .checkbox label:hover::before {
   border: 2px solid #b5b5b5;
 }
@@ -1899,6 +1906,14 @@ body {
 
   border-radius: 50%;
   background-color: #c5c5c5;
+}
+
+.radio input:focus + label {
+  outline: #5fbb2d solid 2px;
+}
+
+.radio input:focus:checked + label {
+  outline: #5fbb2d solid 2px;
 }
 
 .radio label:hover::before {
@@ -2137,6 +2152,28 @@ body {
   }
 }
 
+@keyframes error {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-box {
   display: none;
   position: fixed;
@@ -2149,6 +2186,10 @@ body {
   display: block;
 
   animation: modal-open 0.6s;
+}
+
+.modal-error {
+  animation: error 0.6s;
 }
 
 .modal-box.feedback,

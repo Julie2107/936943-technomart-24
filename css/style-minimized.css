@@ -135,6 +135,7 @@ body{margin:0;padding:0;min-width:960px;font-family:"Cuprum","Arial",sans-serif;
 .service-section{margin-top:65px;padding-top:40px;background-color:#f4f7f9;background-image:url(../img/service-bg.jpg);background-position:top center;background-repeat:no-repeat}
 .service-section h2{font-size:30px;line-height:30px;font-weight:400;text-transform:uppercase}
 .service-section p{margin:0;font-size:13px;font-family:"PT Sans","Arial",sans-serif;font-weight:400;line-height:24px;text-align:left}
+.service-section .service-benefits{width:400px}
 .services{display:-webkit-box;display:-ms-flexbox;display:flex;margin-top:70px}
 .service-tabs{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;position:relative;list-style:none;margin-right:80px}
 .service-tabs::after{content:"";position:absolute;width:10px;height:268px;top:-40px;right:0;background:url(../img/tab-label.png) no-repeat 0 0}
@@ -146,14 +147,16 @@ body{margin:0;padding:0;min-width:960px;font-family:"Cuprum","Arial",sans-serif;
 .service-content h3{margin-top:0;margin-bottom:25px;max-width:380px;max-height:180px;color:#32425c;font-size:36px;line-height:36px;text-transform:uppercase}
 .service-content p{font-weight:400;line-height:24px}
 .delivery-tab{background:url(../img/icon-delivery.png) no-repeat 100% 100%}
+.delivery-tab p{width:278px}
 .guarantee-tab{background:url(../img/icon-guarantee.png) no-repeat 100% 100%}
+.guarantee-tab p{width:360px}
 .credit-tab{background:url(../img/icon-credit.png) no-repeat 100% 100%}
 .credit-tab .button{display:block;width:195px;margin-top:24px}
 .logistic{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding-top:80px;padding-bottom:85px;color:#000;text-align:left}
 .logistic h2{margin-top:0;margin-bottom:26px;font-size:30px;font-weight:400;line-height:30px;text-transform:uppercase}
 .company{width:520px}
 .company p,.map-contact p{margin-bottom:0;padding-bottom:10px;font-family:"PT Sans","Arial",sans-serif;font-size:13px;line-height:24px}
-.map-contact img{margin-top:20px}
+.map-contact img{margin-top:20px;background-color:#f4f2ec}
 .transcompanies{padding-top:0;padding-left:33px;margin:0;margin-top:5px;list-style:none;font-size:17px;line-height:38px;font-weight:700}
 .transcompanies li{position:relative}
 .transcompanies li::before{content:"";position:absolute;width:25px;height:2px;left:-35px;top:17px;background-color:#ee3643}

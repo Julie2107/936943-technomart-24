@@ -1190,6 +1190,10 @@ body {
   text-align: left;
 }
 
+.service-section .service-benefits {
+  width: 400px;
+}
+
 .services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1250,10 +1254,6 @@ body {
 
   color: #ffffff;
 }
-/*
-.service-tab:not(.service-tab-active):hover {
-}
-*/
 
 #radio-delivery:checked ~ .service-tabs label:first-child,
 #radio-guarantee:checked ~ .service-tabs label:nth-child(2),
@@ -1304,8 +1304,16 @@ body {
   background: url("../img/icon-delivery.png") no-repeat 100% 100%;
 }
 
+.delivery-tab p {
+  width: 278px;
+}
+
 .guarantee-tab {
   background: url("../img/icon-guarantee.png") no-repeat 100% 100%;
+}
+
+.guarantee-tab p {
+  width: 360px;
 }
 
 .credit-tab {
@@ -1358,6 +1366,7 @@ body {
 
 .map-contact img {
   margin-top: 20px;
+  background-color: #f4f2ec;
 }
 
 .transcompanies {
